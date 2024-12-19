@@ -1,6 +1,6 @@
 import re
 
-def detect_and_compute_mul_from_file(file_name):
+def multdetect(file_name):
     with open(file_name, 'r') as file:
         text = file.read()
 
@@ -19,5 +19,5 @@ def detect_and_compute_mul_from_file(file_name):
     return results, final_result
 
 file_name = 'adventday3.txt'
-results, final_result = detect_and_compute_mul_from_file(file_name)
+results, final_result = multdetect(file_name)
 print(f"Final result: {final_result}")
